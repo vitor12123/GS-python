@@ -32,9 +32,9 @@ def resolucaoProblemas(identificacao,OProblema):
     }
 
   if identificacao == 1:
-    mensagemSuperiores["salario atrasado"] = input("digite o seu pix: ")
+    mensagemSuperiores["Pix salario atrasado"] = input("digite o seu pix: ")
   elif identificacao == 2:
-    mensagemSuperiores["horas extras não pagas"] = input("digite o seu pix: ")
+    mensagemSuperiores["Pix hora extra"] = input("digite o seu pix: ")
   elif identificacao == 3:
     mensagemSuperiores["quem"] = input("digite o nome de quem te discriminou: ")
     mensagemSuperiores["descricao"] = input("descreva como foi a situação: ")
@@ -58,6 +58,11 @@ def lerHorariosEntrada(caminho_arquivo, nome_funcionario="joao"):
         global horarioEntrada
         horarioEntrada = i0 + i1
         i0 = horarioEntrada
+    
+    for i1 in len(saidas):
+        global horarioSaida
+        horarioSaida = i0 + i1
+        i0 = horarioSaida
 
 while verificacaoLoop1 :
     verificacaoSaude = input(f"Olá {nome}, esta bem fisicamente ou mentalmente / (s/n): ").strip()
@@ -76,4 +81,4 @@ while verificacaoLoop1 :
 with open("formulario.json", "w") as msg:
     json.dump(mensagemSuperiores, msg, indent=4)
 
-print(mensagemSuperiores)
+print(mensagemSuperiores) 
