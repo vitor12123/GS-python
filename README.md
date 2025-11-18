@@ -2,8 +2,8 @@
 
 Integrantes: 
 * Vitor Pallis RM: 561962
-* Miguel Manfré RM:
-* João Victor Toledo RM:
+* Miguel Manfré RM: 564233
+* João Victor Toledo RM: 563433
 
 # Tema 
 
